@@ -1,0 +1,106 @@
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mtb-5 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.p-4 {
+    padding: 4rem;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.fj-space-between {
+    justify-content: space-between;
+}
+
+.fj-space-around {
+    justify-content: space-around;
+}
+
+.fj-space-evenly {
+    justify-content: space-evenly;
+}
+
+.fj-end {
+    justify-content: end;
+}
+
+.fj-center {
+    justify-content: end;
+}
+
+.fj-start {
+    justify-content: start;
+}
+
+.al-content-center {
+    align-content: center;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.gap-4 {
+    gap:4rem
+}
+
+.plr-6 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.f-r-reverse {
+    flex-direction: row-reverse;
+}
+
+.fb-50 {
+    flex-basis: 50%;
+}
+
+.fb-30 {
+    flex: 1 0 30%;
+}
+
+.parallax {
+    min-height: 85vh;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.bg-gray {
+    background-color: var(--gray-color);
+}

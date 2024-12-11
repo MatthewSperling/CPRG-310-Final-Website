@@ -1,0 +1,345 @@
+/* Define global colors */
+:root {
+    --primary-color: #0a1d2b;
+    --secondary-color: #4380bc;
+    --accent-color: indianred;
+    --light-color: #ecf0f1;
+    --dark-color: #0a1d2b;
+    --gray-color: #f9f9f9;
+    --header-bg: #0000002b
+}
+
+* {
+    font-family: "lft-etica", serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    position: relative;
+    transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
+}
+
+main {
+    flex-grow: 1;
+    width: clamp(300px, 100%, 1440px);
+
+    section:not(:nth-of-type(1), #myModal){
+        margin: 4rem 6rem;
+        
+    }
+}
+
+/* Class to hide the header */
+.hidden-header {
+    top: -100px; /* Move header off the top of the screen */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #000000d4, transparent);
+    padding: 0.5rem 3rem;
+    position: fixed; /* Make the header float */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure it's on top of other content */
+    transition: top 0.3s; /* Smooth hide/show animation */
+  
+}
+/* 
+h3 {
+    font-size: 4rem;
+    font-weight: 100;
+} */
+
+h1, h2, h3, h4, h5{
+    line-height: 1;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 8rem;
+    font-weight: 600;
+    letter-spacing: -4%; 
+    line-height: 1.2; 
+}
+
+h2 {
+    font-size: 4.5rem; 
+    font-weight: 700;
+    letter-spacing: -2%;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 4rem; 
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.35;
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.4;
+}
+
+h5 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    align-content: center;
+    position: relative;
+}
+
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+nav ul li a:not(.button-light, i.fa-solid.fa-bars)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust the position of the underline */
+    width: 0;
+    height: 2px; /* Height of the underline */
+    background-color: var(--light-color); /* Color of the underline */
+    transition: width 0.4s ease; /* Speed of the underline animation */
+}
+
+nav ul li a:not(.button-light):hover::after {
+    width: 100%; /* Full underline when hovered */
+}
+
+#burger-nav {
+    display: none;
+}
+
+#burger-nav  a.button-light {
+    border-radius: 5px;
+}
+
+section:not(:first-child) {
+    align-content: center;
+    max-width: 100vw;
+}
+
+section article:nth-of-type(2) {
+    overflow: hidden;
+}
+
+span {
+    /* font-family: 'adobe-hebrew', sans-serif; */
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+figure {
+    padding: unset;
+    margin: unset;
+
+    figcaption {
+        font-size: 1.3rem;
+    }
+}
+
+img {
+    object-fit: cover;
+}
+
+.button {
+    text-decoration: none;
+    color: var(--dark-color);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 30px;
+    /* border: 1px solid var(--dark-color); */
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
+    font-size: 1.5rem;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color, opacity, border;
+}
+
+.button:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    opacity: 90%;
+}
+
+.button-light {
+    text-decoration: none;
+    color: var(--light-color);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 30px;
+    border: 1px solid var(--light-color);
+    font-size: 1.4rem;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color, opacity;
+}
+
+.button-light:hover {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    opacity: 90%;
+}
+.dark-mode {
+    background-color: black;
+    color: var(--light-color);
+}
+footer#footer-container {
+    padding: 2rem 4rem;
+    width: 100%;
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+
+footer#footer-container h3 {
+   margin: 2rem 0;
+}
+
+footer#footer-container ul li{
+   text-decoration: none;
+   list-style-type: none;
+   font-size: 1.5rem;
+   font-weight: 100;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    width: 100%;
+}
+
+.social-media-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-list li a {
+    color: var(--light-color);
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-media-list li a:hover {
+    color: var(--light-color);
+}
+
+.contact-us h3 {
+    margin-bottom: 1rem;
+}
+
+#footer-logo {
+    margin-left: 0;
+    width: 100%;
+    object-fit: contain;
+}
+
+footer#footer-container section.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+
+#menuModal {
+    background-color: white;
+}
+
+#menuModal header span i,
+#menuModal div.modal-content ul li a {
+    text-decoration: none;
+    font-size: 5vw;
+    color: var(--secondary-color);
+    list-style: none;
+    transition: color 0.4s ease-in-out;
+}
+
+#menuModal header span i:hover,
+#menuModal div.modal-content ul li a:hover {
+    color: var(--dark-color);
+}
+
+#menuModal div.modal-content ul li {
+   
+    color: var(--dark-color);
+}
+
+#menuModal div.modal-content ul {
+    list-style: none;
+}
+ 
+@media screen and (min-width: 480px) and (max-width: 1034px) {
+    main {
+        section:not(:nth-of-type(1)) {
+          margin: 0;
+        }
+      }
+
+    h1, h2, h3, h4, h5 {
+      font-size: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        section:not(:nth-of-type(1)) {
+          margin: 0;
+        }
+      }
+
+    h1, h2, h3, h4, h5 {
+      font-size: 1.7rem;
+    }
+    
+}

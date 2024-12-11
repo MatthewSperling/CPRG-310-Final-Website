@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video/Drone</title>
+    <meta name="description" content="Professional photography services, including event, portrait, real estate, and corporate photography. Capturing memories with quality imagery.">
+    <link rel="stylesheet" href="https://use.typekit.net/let1pqf.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/module.css">
+    <link rel="stylesheet" href="./css/state.css">
+    <link rel="stylesheet" href="./css/photography.css">
+    <link rel="stylesheet" href="./css/responsiveness.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
+    <script src="./script/initialize.js" defer></script>
+    <script src="./script/photography.js" defer></script>
+</head>
+<body>
+    <header id="header-container"></header>
+    <main>
+        <section class="parallax camera-bg bg-gray">
+            <h2>Capturing Moments, Creating Memories</h2>
+        </section>
+
+        <section class="d-flex gap-4 flex-column" id="services">
+            <header>
+                <span id="message">
+                    Whether it’s a wedding, a corporate event, or professional headshots, our photography services are designed to meet your needs. 
+                </span>
+            </header>
+            <div class="d-flex">
+                <article class="camera-card">
+                    <figure>
+                        <img src="./assets/pages/photography/event.jpg" alt="Two people sharing a moment at a WINS Women's Day event" height="500" width="400">
+                        <figcaption>WINS Women's Day Event 2024</figcaption>
+                    </figure>
+                    <h4>Event photography</h4>
+                    <hr>
+                    <span>
+                        Preserve the energy and emotion of your events with stunning, candid imagery that tells the full story.
+                    </span>
+                </article>
+
+                <article class="camera-card">
+                    <figure>
+                        <img src="./assets/pages/photography/port.jpg" alt="Photography studio with lighting equipment at Night Sparrow Productions" height="500" width="400">
+                        <figcaption>Graduation</figcaption>
+                    </figure>
+                    <h4>Portraits and headshots</h4>
+                    <hr>
+                    <span>
+                        Highlight your personality and professionalism with portraits and headshots that leave a lasting impression.
+                    </span>
+                </article>
+
+                <article class="camera-card">
+                    <figure>
+                        <img src="./assets/pages/photography/real.jpg" alt="Row of modern houses in a residential area" height="500" width="400">
+                        <figcaption>Real Estate Photography</figcaption>
+                    </figure>
+                    <h4>Corporate and Real Estate</h4>
+                    <hr>
+                    <span>
+                        Showcase your business or property with professional images that elevate your brand and attract clients.
+                    </span>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery-wrapper">
+            <h2>Photo Gallery</h2>
+            <div id="gallery-section">
+                <!-- Gallery content will go here -->
+            </div>
+        </section>
+
+        <!-- The Modal -->
+        <section id="myModal" class="modal">
+            <header>
+                <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            </header>
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div>
+                    <h3 id="modalTitle"></h3>
+                    <h4 id="modalSubtitle"></h4>
+                    <span id="modalDescription"></span>
+                </div>
+                <img id="modalImage" src="" alt="Modal Image">
+            </div>
+        </section>
+    </main>
+    <footer id="footer-container"></footer>
+</body>
+</html>

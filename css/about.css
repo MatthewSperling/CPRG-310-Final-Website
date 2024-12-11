@@ -1,0 +1,103 @@
+.hero-banner {
+    background-image: url('../assets/pages/about/recording.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--light-color);
+    text-align: center;
+    padding: 10rem 2rem;
+    align-content: center;
+    position: relative;
+}
+
+.hero-banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    background:transparent; /* Semi-transparent overlay */
+    backdrop-filter: brightness(0.5);
+    height: 100%;
+    width: 100%;
+  }
+
+.hero-banner h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    /* margin-bottom: 1rem; */
+    z-index: 3;
+    position: relative;
+    color: var(--light-color);
+}
+
+.hero-banner p {
+    font-size: 1.8rem;
+    color: var(--light-color);
+}
+
+/* About Content */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
+}
+
+.about-content article img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-content article {
+    max-width: 800px;
+    margin: 2rem 0;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+.about-content p {
+    font-size: 1.7rem;
+    color: var(--dark-color);
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    margin: 4rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    background: var(--gray-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-section p {
+    font-size: 1.6rem;
+    color: var(--dark-color);
+    margin-bottom: 2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--accent-color);
+}

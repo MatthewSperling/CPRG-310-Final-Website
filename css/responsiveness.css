@@ -1,0 +1,186 @@
+/* Responsive font sizes */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 6rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    h3 {
+        font-size: 3.2rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    h5 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.6rem;
+    }
+    h4 {
+        font-size: 1.8rem;
+    }
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    .plr-6 {
+        padding: 1rem;
+    }   
+
+    header#header-container nav ul li.full-nav {
+        display: none;
+    }
+
+    li.full-nav:after:hover {
+        content: '';
+    }
+
+    li#burger-nav {
+        display: block;
+    }
+
+    footer#footer-container img {
+        width: 30vw;
+        object-fit: contain;
+    }
+
+    /* HOME */
+
+    span.section-title {
+        padding: 2rem 0;
+        transform: rotate(0);
+        display: block;
+        position: static;
+    }
+    /* AUDIO */
+    .focus-wrapper {
+        flex-direction: column;
+        margin: 0;
+    }
+   
+}
+
+@media (max-width: 768px) {
+   
+
+    h1,
+    .hero-banner h1 {
+        font-size: 7vw;
+    }
+    h2 {
+        font-size: 6vw;
+    }
+    h3 {
+        font-size: 5vw;
+    }
+    h4 {
+        font-size: 4vw;
+    }
+    h5 {
+        font-size: 3vw;
+    }
+
+    main {
+        section#audio-message,
+        section#our-focus,
+        section.video-section.flex-column,
+        section#about,
+        section#project section#past-work{
+            margin: 0;
+        }
+    }
+
+    /* HOME */
+    main section#who-we-are ,
+    main section#our-studio,
+    main section#project {
+        margin: 1rem;
+    }
+
+    section #call-to-action {
+        margin: 0;
+    }
+
+    figure#studio-img ,
+    #studio-img img ,
+    #studio-img figcaption {
+        text-align: center;
+    }
+
+    span.section-title {
+        transform: rotate(0);
+        display: block;
+        padding: 0;
+        position: static;
+    }
+
+    /* ABOUT */
+
+    /* VIDEOS */
+    .parallax h2 {
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    footer#footer-container section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer#slideshow-footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: fit-content;
+        background: linear-gradient(to top, #000000f5, #00000005);
+     }
+     .video-actions {
+         height: fit-content;
+         justify-content: space-between;
+         font-size: 4rem;
+     }
+
+     .video {
+        flex-direction: column;
+    }
+
+    /* PHOTOGRAPHY */
+    main section#gallery-wrapper {
+        margin: 0;
+    }
+    main section#services,
+    main section#services header span#message {
+        font-size: 5vw;
+        margin: 0;
+    }
+
+    section.modal div.modal-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    section.modal div.modal-content div {
+       width: 100%;
+    }
+
+    /* AUDIO */
+    span#message {
+        font-size: 5vw;
+    }
+
+    #audio-service-1, #audio-service-2, #audio-service-3{
+        display: flex;
+        flex-direction: column;
+    }
+}

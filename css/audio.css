@@ -1,0 +1,65 @@
+.audio-bg {
+    background-image: url('../assets/pages/audio/preamp.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 5rem;
+    position: relative;
+}
+
+.parallax:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    background:transparent; /* Semi-transparent overlay */
+    backdrop-filter: brightness(0.5);
+    height: 100%;
+    width: 100%;
+}
+
+.audio-bg h2 {
+    z-index: 3;
+}
+
+main {
+    section:not(:nth-of-type(1)) {
+        margin : 4rem 6rem;
+    }
+}
+
+#audio-message {
+    margin: 6rem 2rem;
+}
+
+#audio-message header {
+    flex:1 0 100%;
+    margin: 6rem 2rem;
+    text-align: left;
+    padding-left: 1.5rem;
+    border-left: 5px solid var(--secondary-color);
+}
+
+#message {
+    display: inline-block;
+    text-align: center;
+    font-size: clamp(1.5rem, 2rem, 3rem);
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: left;
+
+}
+
+
+@media (max-width: 768px) {
+    #message {
+        padding: 0 auto;
+    }
+
+    #services {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,90 @@
+@keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+.button-light,
+button {
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+
+}
+
+.from-left h3,
+.from-left span {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition-property: opacity, transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    
+}
+
+.from-left footer {
+    opacity: 0;
+    transform: translateX(0);
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out
+}
+
+.from-left h3 {
+    transition-delay: 0.2s; 
+}
+
+.from-left span {
+    transition-delay: 1s; 
+}
+
+.from-left footer {
+    transition-delay: 1.5s; 
+}
+
+.from-right h3,
+.from-right span {
+    opacity: 0;
+    transform: translateX(100%);
+    transition-property: opacity, transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out
+}
+
+.from-right footer{
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out
+}
+
+.from-right h3 {
+    transition-delay: 0.2s;
+}
+
+.from-right span {
+    transition-delay: 1s;
+}
+
+.from-right footer{
+    transition-delay: 1.5s;
+}
+
+.right-animate, 
+.from-right.right-animate h3,
+.from-right.right-animate span,
+.left-animate,
+.from-left.left-animate h3,
+.from-left.left-animate span {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.from-left.left-animate footer,
+.from-right.right-animate footer {
+    opacity: 1;
+}
