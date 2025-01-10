@@ -5,7 +5,7 @@ video {
     filter: brightness(0.8);
 }
 
-#project h3{
+#project h3 {
     padding: 0 5rem;
 }
 
@@ -65,7 +65,7 @@ section #call-to-action {
     font-weight: 400;
     height: fit-content;
     margin-left: 90px;
-    transition: 
+    transition:
         background-color 0.4s ease-in-out,
         color 0.4s ease-in-out;
 }
@@ -74,7 +74,7 @@ section #call-to-action {
     margin-bottom: 10rem;
 }
 
-#our-studio{
+#our-studio {
     position: relative;
 }
 
@@ -87,7 +87,7 @@ section #call-to-action {
     text-align: end;
 }
 
-#studio-img figcaption{
+#studio-img figcaption {
     text-align: end;
 }
 
@@ -102,7 +102,7 @@ section #call-to-action {
     flex: 1 0 30%;
 }
 
-img:not(nav a img, #footer-logo){
+img:not(nav a img, #footer-logo) {
     /* border-radius: 5px; */
     /* box-shadow: 0 10px 20px rgb(0 0 0 / 0.2); */
     transition-property: transform, border-radius, box-shadow;
@@ -115,17 +115,17 @@ img:not(nav a img, #footer-logo){
 .past-img {
     opacity: 0;
     margin: 1rem;
-    padding-bottom:1.5rem ;
+    padding-bottom: 1.5rem;
     background-color: transparent;
     text-align: justify;
     overflow: hidden;
     width: 400px;
     border-radius: 10px;
     transform: translateY(10px);
-    transition: box-shadow 1.5s ease-in-out 0.9s, 
-    transform 1s ease-in-out 0.5s, 
-    opacity 0.5s ease-in-out ;
-    
+    transition: box-shadow 1.5s ease-in-out 0.9s,
+        transform 1s ease-in-out 0.5s,
+        opacity 0.5s ease-in-out;
+
 }
 
 .past-img figure {
@@ -140,13 +140,13 @@ img:not(nav a img, #footer-logo){
 }
 
 .past-img span {
-   display: inline-block;
-   padding: 1.5rem;
+    display: inline-block;
+    padding: 1.5rem;
 }
 
 .past-img:hover {
     box-shadow: -1px 15px 30px -12px black;
-  }
+}
 
 .past-img-animation:nth-of-type(1) {
     opacity: 1;
@@ -171,7 +171,7 @@ img:not(nav a img, #footer-logo){
 .cta-animate {
     background-color: var(--dark-color);
     color: white;
-    
+
 }
 
 .focus-number {
@@ -189,7 +189,7 @@ img:not(nav a img, #footer-logo){
     color: indianred;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1034px) {  
+@media screen and (min-width: 480px) and (max-width: 1034px) {
     section#who-we-are main {
         padding: 0;
     }
@@ -207,7 +207,7 @@ img:not(nav a img, #footer-logo){
         width: 100%;
     }
 
-    #studio-message{
+    #studio-message {
         width: 300px;
     }
 
@@ -260,7 +260,7 @@ img:not(nav a img, #footer-logo){
         width: 100%;
     }
 
-    #studio-message{
+    #studio-message {
         width: 300px;
     }
 
