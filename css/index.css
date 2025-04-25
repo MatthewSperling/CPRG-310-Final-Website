@@ -289,3 +289,20 @@ img:not(nav a img, #footer-logo) {
         height: 300px;
     }
 }
+
+/* ── Center h4 and the following descriptive text ─────────────────── */
+
+#project h4 {
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0 1rem;
+    /* optional spacing */
+}
+
+#project #latest-span {
+    display: block;
+    margin: 0 auto 2rem;
+    text-align: center;
+    width: clamp(300px, 80%, 800px);
+    /* preserves your existing width clamp */
+}
